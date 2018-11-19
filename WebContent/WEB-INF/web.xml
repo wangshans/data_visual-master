@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+
+
+	<!-- 注册servlet -->
+	<servlet>
+		<servlet-name>barService</servlet-name>
+		<servlet-class>com.lgw.servlet.BarService</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>barService</servlet-name>
+		<url-pattern>/bar.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>barService2</servlet-name>
+		<url-pattern>/bar2.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>barService3</servlet-name>
+		<url-pattern>/bar3.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>barService4</servlet-name>
+		<url-pattern>/bar4.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>barService5</servlet-name>
+		<url-pattern>/bar5.do</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+		<servlet-name>show1Service</servlet-name>
+		<url-pattern>/show1.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>show2Service</servlet-name>
+		<url-pattern>/show2.do</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>barService2</servlet-name>
+		<servlet-class>com.lgw.servlet.BarService2</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>barService3</servlet-name>
+		<servlet-class>com.lgw.servlet.BarService3</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>barService4</servlet-name>
+		<servlet-class>com.lgw.servlet.BarService4</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>barService5</servlet-name>
+		<servlet-class>com.lgw.servlet.BarService5</servlet-class>
+	</servlet>
+		<servlet>
+		<servlet-name>show1Service</servlet-name>
+		<servlet-class>com.lgw.servlet.Show1Service</servlet-class>
+	</servlet>
+		<servlet>
+		<servlet-name>show2Service</servlet-name>
+		<servlet-class>com.lgw.servlet.Show2Service</servlet-class>
+	</servlet>
+	<servlet>
+	    <description></description>
+	    <display-name>LoginServlet</display-name>
+	    <servlet-name>LoginServlet</servlet-name>
+	    <servlet-class>com.lgw.login.LoginServlet</servlet-class>
+    </servlet>
+	<servlet-mapping>
+	    <servlet-name>LoginServlet</servlet-name>
+	    <url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+	    <description></description>
+	    <display-name>OutServlet</display-name>
+	    <servlet-name>OutServlet</servlet-name>
+	    <servlet-class>com.lgw.login.OutServlet</servlet-class>
+    </servlet>
+	<servlet-mapping>
+	    <servlet-name>OutServlet</servlet-name>
+	    <url-pattern>/OutServlet</url-pattern>
+	</servlet-mapping>	
+
+
+	 <session-config>
+	<session-timeout>30</session-timeout>  <span style="color:#3366ff;"><span style="font-family:Arial;"><!--单位为分钟，30分钟--></span></span>
+	</session-config>
+
+	
+
+</web-app>

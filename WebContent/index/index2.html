@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+<div class="wrap">
+<!-- <div class="header">
+	<div class="logo">
+		<a href="index.html"><img src="images/logo.png" alt="" /> </a>
+	</div>
+</div> -->
+
+
+</div>
+<div class="main-bg">
+
+<div class="wrap">
+
+    <div style="padding-top:90px; padding-bottom: 0px;" >
+		<p style="text-align:center; font-size:40px; color:  white;font-weight: bold;letter-spacing: 5px;  ">  以太坊交易大数据分析服务平台 </p> 
+	</div>
+<div class="main clearfix">
+				<nav id="menu" class="nav">					
+					<ul>
+						<li>
+							<a href="index2.html">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-home"></i>
+								</span>
+								<span>首页</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<span class="icon"> 
+									<i aria-hidden="true" class="icon-services"></i>
+								</span>
+								<span>信息发布</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-portfolio"></i>
+								</span>
+								<span>电子导览</span>
+							</a>
+						</li>
+												
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-blog"></i>
+								</span>
+								<span>在线销售</span>
+							</a>
+						</li>
+						<li>
+							<a href="http://localhost:8080/Jinshantun_data_/index.jsp">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-contact"></i>
+								</span>
+								<span>信息管理</span>
+							</a>
+						</li>
+					</ul>
+					<div class="tlinks">Collect from <a href="#" >网页模板</a></div>
+					<div class="clear"></div>
+								<script>
+			//  The function to change the class
+			var changeClass = function (r,className1,className2) {
+				var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
+				if( regex.test(r.className) ) {
+					r.className = r.className.replace(regex,' '+className2+' ');
+			    }
+			    else{
+					r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+className1+' ');
+			    }
+			    return r.className;
+			};	
+
+			//  Creating our button in JS for smaller screens
+			var menuElements = document.getElementById('menu');
+			menuElements.insertAdjacentHTML('afterBegin','<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i> Menu</button>');
+
+			//  Toggle the class on click to show / hide the menu
+			document.getElementById('menutoggle').onclick = function() {
+				changeClass(this, 'navtoogle active', 'navtoogle');
+			}
+			document.onclick = function(e) {
+				var mobileButton = document.getElementById('menutoggle'),
+					buttonStyle =  mobileButton.currentStyle ? mobileButton.currentStyle.display : getComputedStyle(mobileButton, null).display;
+
+				if(buttonStyle === 'block' && e.target !== mobileButton && new RegExp(' ' + 'active' + ' ').test(' ' + mobileButton.className + ' ')) {
+					changeClass(mobileButton, 'navtoogle active', 'navtoogle');
+				}
+			}
+		</script>
+	</nav>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer1-bg">
+<div class="wrap">
+<div class="footer1">
+	<p class="w3-link"><span>以太坊交易大数据分析服务平台      猎豹移动 </span></p>
+</div>
+</div>
+</div>
+
+</body>
+</html>
